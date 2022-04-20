@@ -10,12 +10,6 @@ const connect = function () {
   conn.on('connect', () => {
     conn.write('Name: KYL');
   });
-  /*conn.on('connect', () => {
-    setInterval(() => {
-      conn.write('Move: up');
-    }, 50);
-    conn.write('Move: up');
-  });*/
   conn.on('data', (data) => {
     console.log('Incoming data!', data);
   });
