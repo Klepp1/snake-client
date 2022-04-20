@@ -1,6 +1,6 @@
 const net = require("net");
 const { IP, PORT } = require('./constants');
-const connect = function () {
+const connect = function() {
   const conn = net.createConnection({
     host: IP,
     port: PORT,
@@ -14,9 +14,7 @@ const connect = function () {
   conn.on('data', (data) => {
     console.log('Incoming data!', data);
   });
-  // interpret incoming data as text
   conn.setEncoding("utf8");
-
   return conn;
 };
 

@@ -14,16 +14,16 @@ const handleUserInput = function(data) {
     process.exit();
   }
   if (data === 'w') {
-    connection.write(w = 'Move: up');
+    connection.write('Move: up');
   }
   if (data === 'a') {
-    connection.write(w = 'Move: left');
+    connection.write('Move: left');
   }
   if (data === 's') {
-    connection.write(w = 'Move: down');
+    connection.write('Move: down');
   }
   if (data === 'd') {
-    connection.write(w = 'Move: right');
+    connection.write('Move: right');
   }
   if (data === 'z') {
     connection.write('Say: Hello!');
